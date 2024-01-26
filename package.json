@@ -8,7 +8,8 @@
     "format": "npx prettier src/**/*.js --check",
     "fix": "npm run lint -- --fix && npm run format -- --write",
     "style:lint": "npx stylelint \"./src/styles/**/*.{css,scss,sass}\"",
-    "style:fix": "npm run stylelint -- --fix"
+    "style:fix": "npm run stylelint -- --fix",
+    "build": "webpack build"
   },
   "keywords": [],
   "author": "",
