@@ -27,7 +27,7 @@ function renderEduSection(data) {
 
     return (
         `<section className="education">
-            <h2 className="education__heading">Education</h2>
+            <h2 className="education__heading content-heading">Education</h2>
             <ul className="education__list">
                 ${elems.join('\n')}
             </ul>
