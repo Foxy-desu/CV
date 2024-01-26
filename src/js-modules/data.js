@@ -49,7 +49,8 @@ const cvData = {
             {name: 'Library landing', desc: '', thumb: '', src: 'https://foxy-desu.github.io/Library-landing-project/'},
             {name: 'Japan landing', desc: '', thumb: '', src: 'https://foxy-desu.github.io/Japan_travel_landing/'}
         ]
-    }
+    },
+    gitHub: 'https://github.com/Foxy-desu'
 }
 
 export {cvData};
