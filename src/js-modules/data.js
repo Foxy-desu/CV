@@ -1,4 +1,8 @@
 import photo from '../assets/img/photo.jpeg';
+import cofee from '../assets/icons/cofee-house.svg';
+import hangman from '../assets/icons/hangman.png';
+import japan from '../assets/icons/japan.png';
+import library from '../assets/icons/lib.png'
 
 const cvData = {
     name: 'Alexandra',
@@ -44,10 +48,10 @@ const cvData = {
             "I believe my strong will, background and passion for frontend will surely lead me to this brand-new profession."
         ],
         experience: [
-            {name: 'Coffee House', desc: '', thumb: '', src: 'https://foxy-desu.github.io/CoffeeHouse/coffee-house/'},
-            {name: 'Hangman', desc: '', thumb: '', src: 'https://foxy-desu.github.io/HangMan/hangman/src/'},
-            {name: 'Library landing', desc: '', thumb: '', src: 'https://foxy-desu.github.io/Library-landing-project/'},
-            {name: 'Japan landing', desc: '', thumb: '', src: 'https://foxy-desu.github.io/Japan_travel_landing/'}
+            {name: 'Coffee House', desc: '', thumb: cofee, src: 'https://foxy-desu.github.io/CoffeeHouse/coffee-house/'},
+            {name: 'Hangman', desc: '', thumb: hangman, src: 'https://foxy-desu.github.io/HangMan/hangman/src/'},
+            {name: 'Library landing', desc: '', thumb: library, src: 'https://foxy-desu.github.io/Library-landing-project/'},
+            {name: 'Japan landing', desc: '', thumb: japan, src: 'https://foxy-desu.github.io/Japan_travel_landing/'}
         ]
     },
     gitHub: 'https://github.com/Foxy-desu'
