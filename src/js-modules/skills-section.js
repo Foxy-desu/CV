@@ -2,16 +2,16 @@ function renderSkillsSection(data) {
     const skills = data.asideBlock.skills;
     const skillsElems = skills.map((skill)=> {
         return (
-            `<li className="skills__skill">
+            `<li class="skills__skill">
                 ${skill}
             </li>`
         )
     });
 
     return (
-        `<section className="skills">
-            <h2 className="skills__heading content-heading">Skills</h2>
-            <ul className="skills__list">
+        `<section class="skills section">
+            <h2 class="skills__heading content-heading">skills</h2>
+            <ul class="skills__list">
                 ${skillsElems.join('\n')}
             </ul>
         </section>`

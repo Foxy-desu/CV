@@ -11,13 +11,13 @@ function renderContacts(data) {
         const currHref = hrefs[index];
 
         return (
-           `<li className="contacts__${key}">
+           `<li class="contacts__${key}">
                 <image
-                    className="contacts__ico"
+                    class="contacts__ico"
                     src="${currentImg}"
                     alt="${key} contact"/>
                 <a
-                    className="contacts__link"
+                    class="contacts__link"
                     href="${currHref}${value}">
                     ${key.toString() === 'telegram'? '@':''}${value}
                 </a>
@@ -25,9 +25,9 @@ function renderContacts(data) {
         )
     })
     return (
-        `<section>
-            <h2 className="contacts__heading content-heading">Contacts</h2>
-            <ul className="contacts__list content-list">
+        `<section class="contacts section">
+            <h2 class="contacts__heading content-heading">contacts</h2>
+            <ul class="contacts__list">
                 ${elements.join('\n')}
             </ul>
         </section>`

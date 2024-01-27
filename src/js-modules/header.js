@@ -1,21 +1,23 @@
 function renderHeader(info) {
     return (
-        `<header className="hero">
-            <div className="hero__desc-block">
-                <h1 className="person-name">
-                    <span className="surname">${info.surname}</span>
-                    <span className="name">${info.name}</span>
-                <h1>
-                <p className="person-position">
-                    ${info.position}
-                </p>
-            </div>
-            <div className="hero__image-block">
-                <div className="person-photo">
-                    <img className="person-photo__img" src="${info.photo}">
+        `<div class="wrap">
+            <header class="hero">
+                <div class="hero__desc-block">
+                    <h1 class="person-name">
+                        <p class="person-name__surname">${info.surname}</p>
+                        <p class="person-name__name">${info.name}</p>
+                    </h1>
+                    <p class="person-position">
+                        ${info.position}
+                    </p>
                 </div>
-            </div>
-        </header>`
+                <div class="hero__image-block">
+                    <div class="person-photo">
+                        <img class="person-photo__img" width="150" height="150" src="${info.photo}">
+                    </div>
+                </div>
+            </header>
+        </div>`
     )
 }
 

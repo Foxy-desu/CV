@@ -1,6 +1,6 @@
 function renderWrap(...content) {
     return (
-        `<div className="wrap">${content.join('\n')}</div>`
+        `<div class="wrap info-wrap">${content.join('\n')}</div>`
     )
 }
 

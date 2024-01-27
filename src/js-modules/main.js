@@ -1,6 +1,6 @@
 function renderMain(...content) {
     return (
-        `<main className="main">${content.join('\n')}</main>`
+        `<main class="main">${content.join('\n')}</main>`
     )
 }
 

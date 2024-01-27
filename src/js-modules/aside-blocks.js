@@ -1,6 +1,6 @@
 function renderAsideBlocks(...blocks) {
    return (
-    `<div className="aside__sections">
+    `<div class="aside__sections">
         ${blocks.join('\n')}
     </div>`
    )

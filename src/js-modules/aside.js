@@ -1,6 +1,6 @@
 function renderAside(...content) {
     return (
-        `<aside className="aside">${content.join('\n')}</aside>`
+        `<aside class="aside">${content.join('\n')}</aside>`
     )
 }
 

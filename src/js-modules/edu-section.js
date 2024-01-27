@@ -4,20 +4,20 @@ function renderEduSection(data) {
         const {university: place, degrees} = edu;
         const degreesElems = degrees.map((deg)=> {
             return (
-                `<li className="entity__degree">
-                    <p className="entity__degree-name">
+                `<li class="entity__degree">
+                    <p class="entity__degree-name">
                         ${deg.name}
                     </p>
-                    <p className="entity__degree-years">
+                    <p class="entity__degree-years">
                         ${deg.years}
                     </p>
                 </li>`
             )
         })
         return (
-            `<li className="education__entity">
-                <h3 className="entity__place">${place}</h3>
-                <ul className="entity__degrees">
+            `<li class="education__entity">
+                <h3 class="entity__place">${place}</h3>
+                <ul class="entity__degrees">
                     ${degreesElems.join('\n')}
                 </ul>
             </li>`
@@ -26,9 +26,9 @@ function renderEduSection(data) {
     })
 
     return (
-        `<section className="education">
-            <h2 className="education__heading content-heading">Education</h2>
-            <ul className="education__list">
+        `<section class="education section">
+            <h2 class="education__heading content-heading">education</h2>
+            <ul class="education__list">
                 ${elems.join('\n')}
             </ul>
         </section>`
