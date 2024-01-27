@@ -1,0 +1,57 @@
+.wrap {
+    @extend %side-padding;
+}
+
+.hero {
+    @extend %flex-horizon;
+    justify-content: space-between;
+    padding: 0 20px 20px;
+    border-bottom: $bw-thic solid $clr-primary-ltr;
+}
+
+.hero__desc-block {
+    @extend %flex-vertical;
+    margin-right: 20px;
+    padding-top: 20px;
+}
+
+.person-name {
+    font-size: $fs-big;
+    line-height: 85%;
+    margin-bottom: 3%;
+
+    &__surname {
+        position: relative;
+        color: $clr-lt;
+        left: -1%;
+        font-weight: $fw-sml;
+    }
+
+    &__name {
+        font-weight: $fw-big;
+    }
+}
+
+.person-position {
+    font-size: $fs-mid;
+    font-weight: $fw-smlr
+}
+
+.hero__image-block {
+    @extend %flex-vertical;
+    justify-content: end; 
+}
+
+.person-photo {
+    max-width: 165px;
+    max-height: 165px;
+    border: $bw-thic solid $clr-primary-ltr;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.person-photo__img {
+    object-fit: cover;
+    position: relative;
+    transform: scale(140%);
+}
