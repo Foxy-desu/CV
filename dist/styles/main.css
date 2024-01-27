@@ -1,16 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,400;0,600;0,900;1,100;1,200;1,400;1,600;1,900&display=swap");
-.contacts__list, .hero__image-block, .hero__desc-block, .page {
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,600;0,900;1,100;1,200;1,300;1,400;1,600;1,900&display=swap");
+.hero__image-block, .hero__desc-block, .page {
   display: flex;
   flex-direction: column;
 }
 
-.info-wrap, .hero {
+.git-card, .footer, .exp-entry__link, .experience__exp-entry, .info-wrap, .hero {
   display: flex;
   flex-direction: row;
 }
 
 .wrap {
   padding: 0 40px;
+}
+
+.experience__list, .languages__list, .skills__list, .entity__degrees, .contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
 }
 
 * {
@@ -29,9 +35,9 @@ li {
   padding-top: 40px;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
-  font-weight: 200;
+  font-weight: 300;
   color: #565656;
-  background-color: #fff;
+  background-color: #f7f7f7;
   box-shadow: 10px 10px 40px -1px rgba(0, 0, 0, 0.23);
 }
 
@@ -63,7 +69,7 @@ li {
 
 .person-position {
   font-size: 28px;
-  font-weight: 100;
+  font-weight: 200;
 }
 
 .hero__image-block {
@@ -122,10 +128,6 @@ li {
   padding-top: 25px;
 }
 
-.contacts__list {
-  gap: 7px;
-}
-
 .contacts__ico {
   box-sizing: content-box;
   width: 16px;
@@ -145,8 +147,101 @@ li {
   }
 }
 
+.entity__place {
+  color: #8c8a8a;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.entity__degrees {
+  padding-left: 10px;
+}
+
+.entity__degree-years {
+  color: #8c8a8a;
+}
+
+.languages__language-name {
+  text-transform: capitalize;
+}
+
 .main {
   flex-basis: 60%;
   border-left: 2px solid #9b9b9b;
   padding: 30px 0 0 30px;
+}
+
+.about__heading {
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #656565;
+}
+
+.about__desc {
+  margin-bottom: 20px;
+  line-height: 135%;
+  text-align: justify;
+}
+
+.experience__list {
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 7px;
+}
+
+.experience__exp-entry {
+  flex-grow: 1;
+  border: 2px solid #ffffff;
+  padding: 10px 20px;
+}
+
+.exp-entry__img-wrap {
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid #f7f7f7;
+}
+
+.exp-entry__link {
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 400;
+  color: #565656;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+}
+@media (hover: hover) and (pointer: fine) {
+  .exp-entry__link:hover {
+    font-size: 21px;
+  }
+}
+
+.footer {
+  justify-content: space-between;
+  background-color: #4b4a4a;
+  padding: 15px 30px;
+  color: #a9a9a9;
+  font-weight: 400;
+}
+
+.git-card {
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+@media (hover: hover) and (pointer: fine) {
+  .git-card:hover {
+    filter: brightness(120%);
+  }
+}
+
+.git-card__text {
+  color: #a9a9a9;
+  font-weight: 400;
 }/*# sourceMappingURL=main.css.map */

@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_
   \*****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   renderAboutSection: () => (/* binding */ renderAboutSection)\n/* harmony export */ });\nfunction renderAboutSection(data) {\n  const about = data.mainBlock.aboutMe;\n  const descElems = about.map(paragraph => {\n    return `<p class=\"about__desc\">${paragraph}</p>`;\n  });\n  return `<section class=\"about section\">\n            <h2 class=\"about__heading\">About me</h2>\n            <div class=\"about__desc-block\">\n                ${descElems.join('\\n')}\n            </div>\n        </section>`;\n}\n\n\n//# sourceURL=webpack://cv/./src/js-modules/about-section.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   renderAboutSection: () => (/* binding */ renderAboutSection)\n/* harmony export */ });\nfunction renderAboutSection(data) {\n  const about = data.mainBlock.aboutMe;\n  const descElems = about.map(paragraph => {\n    return `<p class=\"about__desc\">&emsp;${paragraph}</p>`;\n  });\n  return `<section class=\"about section\">\n            <h2 class=\"about__heading\">About me</h2>\n            <div class=\"about__desc-block\">\n                ${descElems.join('\\n')}\n            </div>\n        </section>`;\n}\n\n\n//# sourceURL=webpack://cv/./src/js-modules/about-section.js?");
 
 /***/ }),
 
@@ -66,7 +66,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   cvData: () => (/* binding */ cvData)\n/* harmony export */ });\n/* harmony import */ var _assets_img_photo_jpeg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../assets/img/photo.jpeg */ \"./src/assets/img/photo.jpeg\");\n\nconst cvData = {\n  name: 'Alexandra',\n  surname: 'Orliuk',\n  position: 'Frontend developer',\n  photo: _assets_img_photo_jpeg__WEBPACK_IMPORTED_MODULE_0__,\n  asideBlock: {\n    contacts: {\n      phone: '+79893544196',\n      mail: 'iammeduza@gmail.com',\n      telegram: 'pincalsthedeer'\n    },\n    education: [{\n      university: 'Amur State University',\n      degrees: [{\n        name: 'Bachelor of Linguistics',\n        years: '2014-2018'\n      }, {\n        name: 'Master of Linguistics',\n        years: '2018-2020'\n      }]\n    }],\n    skills: ['HTML5', 'CSS3', 'SASS (SCSS)', 'JS', 'NPM', 'Webpack', 'Figma', 'Git', 'Bash'],\n    languages: {\n      russian: 'native',\n      english: 'advanced',\n      chinese: 'elementary'\n    }\n  },\n  mainBlock: {\n    aboutMe: [\"Having graduated the university I started my carreer as a teacher of foreign languages at a local foreign language school in Blagoveshchensk. Being a teacher was fun, it also helped a lot in ganing different skills. After 4 years of teaching I found out that this was not my kind of thing.\", \"Some circumstances made me leave my hometown for another city where I started working as a client support agent for an IT company. This position gave me much experience in communication, problem solving; let me take a closer look at technical side of our service, and business processes in our company. Working with high skilled developers I realized that frontend developing is an interesting IT field. I've started learning and have already obtaines some hard skills.\", \"I believe my strong will, background and passion for frontend will surely lead me to this brand-new profession.\"],\n    experience: [{\n      name: 'Coffee House',\n      desc: '',\n      thumb: '',\n      src: 'https://foxy-desu.github.io/CoffeeHouse/coffee-house/'\n    }, {\n      name: 'Hangman',\n      desc: '',\n      thumb: '',\n      src: 'https://foxy-desu.github.io/HangMan/hangman/src/'\n    }, {\n      name: 'Library landing',\n      desc: '',\n      thumb: '',\n      src: 'https://foxy-desu.github.io/Library-landing-project/'\n    }, {\n      name: 'Japan landing',\n      desc: '',\n      thumb: '',\n      src: 'https://foxy-desu.github.io/Japan_travel_landing/'\n    }]\n  },\n  gitHub: 'https://github.com/Foxy-desu'\n};\n\n\n//# sourceURL=webpack://cv/./src/js-modules/data.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   cvData: () => (/* binding */ cvData)\n/* harmony export */ });\n/* harmony import */ var _assets_img_photo_jpeg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../assets/img/photo.jpeg */ \"./src/assets/img/photo.jpeg\");\n/* harmony import */ var _assets_icons_cofee_house_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/icons/cofee-house.svg */ \"./src/assets/icons/cofee-house.svg\");\n/* harmony import */ var _assets_icons_hangman_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/icons/hangman.png */ \"./src/assets/icons/hangman.png\");\n/* harmony import */ var _assets_icons_japan_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/icons/japan.png */ \"./src/assets/icons/japan.png\");\n/* harmony import */ var _assets_icons_lib_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/icons/lib.png */ \"./src/assets/icons/lib.png\");\n\n\n\n\n\nconst cvData = {\n  name: 'Alexandra',\n  surname: 'Orliuk',\n  position: 'Frontend developer',\n  photo: _assets_img_photo_jpeg__WEBPACK_IMPORTED_MODULE_0__,\n  asideBlock: {\n    contacts: {\n      phone: '+79893544196',\n      mail: 'iammeduza@gmail.com',\n      telegram: 'pincalsthedeer'\n    },\n    education: [{\n      university: 'Amur State University',\n      degrees: [{\n        name: 'Bachelor of Linguistics',\n        years: '2014-2018'\n      }, {\n        name: 'Master of Linguistics',\n        years: '2018-2020'\n      }]\n    }],\n    skills: ['HTML5', 'CSS3', 'SASS (SCSS)', 'JS', 'NPM', 'Webpack', 'Figma', 'Git', 'Bash'],\n    languages: {\n      russian: 'native',\n      english: 'advanced',\n      chinese: 'elementary'\n    }\n  },\n  mainBlock: {\n    aboutMe: [\"Having graduated the university I started my carreer as a teacher of foreign languages at a local foreign language school in Blagoveshchensk. Being a teacher was fun, it also helped a lot in ganing different skills. After 4 years of teaching I found out that this was not my kind of thing.\", \"Some circumstances made me leave my hometown for another city where I started working as a client support agent for an IT company. This position gave me much experience in communication, problem solving; let me take a closer look at technical side of our service, and business processes in our company. Working with high skilled developers I realized that frontend developing is an interesting IT field. I've started learning and have already obtaines some hard skills.\", \"I believe my strong will, background and passion for frontend will surely lead me to this brand-new profession.\"],\n    experience: [{\n      name: 'Coffee House',\n      desc: '',\n      thumb: _assets_icons_cofee_house_svg__WEBPACK_IMPORTED_MODULE_1__,\n      src: 'https://foxy-desu.github.io/CoffeeHouse/coffee-house/'\n    }, {\n      name: 'Hangman',\n      desc: '',\n      thumb: _assets_icons_hangman_png__WEBPACK_IMPORTED_MODULE_2__,\n      src: 'https://foxy-desu.github.io/HangMan/hangman/src/'\n    }, {\n      name: 'Library landing',\n      desc: '',\n      thumb: _assets_icons_lib_png__WEBPACK_IMPORTED_MODULE_4__,\n      src: 'https://foxy-desu.github.io/Library-landing-project/'\n    }, {\n      name: 'Japan landing',\n      desc: '',\n      thumb: _assets_icons_japan_png__WEBPACK_IMPORTED_MODULE_3__,\n      src: 'https://foxy-desu.github.io/Japan_travel_landing/'\n    }]\n  },\n  gitHub: 'https://github.com/Foxy-desu'\n};\n\n\n//# sourceURL=webpack://cv/./src/js-modules/data.js?");
 
 /***/ }),
 
@@ -86,7 +86,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \***************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   renderExp: () => (/* binding */ renderExp)\n/* harmony export */ });\nfunction renderExp(data) {\n  const exp = data.mainBlock.experience;\n  const expElems = exp.map(entry => {\n    return `<li class=\"experience__exp-entry\">\n                <div class=\"exp-entry__img-wrap\"><img class=\"exp-entry__img\" src=\"${entry.thumb}\" alt=\"${entry.name}\"/></div>\n                <p class=\"exp-entry__name\">${entry.name}</p>\n                <a class=\"exp-entry__link\">${entry.src}</a>\n            </li>`;\n  });\n  return `<section class=\"experience section\">\n            <h2 class=\"experience__heading content-heading\">experience</h2>\n            <ul class=\"experience__list\">\n                ${expElems.join('\\n')}\n            </ul>\n        </section>`;\n}\n\n\n//# sourceURL=webpack://cv/./src/js-modules/exp-section.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   renderExp: () => (/* binding */ renderExp)\n/* harmony export */ });\nfunction renderExp(data) {\n  const exp = data.mainBlock.experience;\n  const expElems = exp.map(entry => {\n    const name = entry.name.split(' ').map(word => {\n      return `<span>${word}<br></span>`;\n    }).join('\\n');\n    return `<li class=\"experience__exp-entry\">\n                <a class=\"exp-entry__link\" href=\"${entry.src}\">\n                <div class=\"exp-entry__img-wrap\">\n                    <img class=\"exp-entry__img\" width=\"70\" height=\"70\" src=\"${entry.thumb}\" alt=\"${entry.name}\"/>\n                </div>\n                <p class=\"exp-entry__text\">${name}</p></a>\n            </li>`;\n  });\n  return `<section class=\"experience section\">\n            <h2 class=\"experience__heading content-heading\">projects</h2>\n            <ul class=\"experience__list\">\n                ${expElems.join('\\n')}\n            </ul>\n        </section>`;\n}\n\n\n//# sourceURL=webpack://cv/./src/js-modules/exp-section.js?");
 
 /***/ }),
 
@@ -160,6 +160,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/assets/icons/cofee-house.svg":
+/*!******************************************!*\
+  !*** ./src/assets/icons/cofee-house.svg ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"ad970032f13067e4517a.svg\";\n\n//# sourceURL=webpack://cv/./src/assets/icons/cofee-house.svg?");
+
+/***/ }),
+
 /***/ "./src/assets/icons/github.svg":
 /*!*************************************!*\
   !*** ./src/assets/icons/github.svg ***!
@@ -167,6 +177,36 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"1695e28235029d34be2c.svg\";\n\n//# sourceURL=webpack://cv/./src/assets/icons/github.svg?");
+
+/***/ }),
+
+/***/ "./src/assets/icons/hangman.png":
+/*!**************************************!*\
+  !*** ./src/assets/icons/hangman.png ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"c78e343b72cae332bc56.png\";\n\n//# sourceURL=webpack://cv/./src/assets/icons/hangman.png?");
+
+/***/ }),
+
+/***/ "./src/assets/icons/japan.png":
+/*!************************************!*\
+  !*** ./src/assets/icons/japan.png ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"ea4d65ee94124244b2a9.png\";\n\n//# sourceURL=webpack://cv/./src/assets/icons/japan.png?");
+
+/***/ }),
+
+/***/ "./src/assets/icons/lib.png":
+/*!**********************************!*\
+  !*** ./src/assets/icons/lib.png ***!
+  \**********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"0adc5d3c0ff5144ca45f.png\";\n\n//# sourceURL=webpack://cv/./src/assets/icons/lib.png?");
 
 /***/ }),
 
