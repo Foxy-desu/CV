@@ -1,7 +1,7 @@
 function renderAboutSection(data) {
     const about = data.mainBlock.aboutMe;
     const descElems = about.map((paragraph)=> {
-        return `<p class="about__desc">${paragraph}</p>`
+        return `<p class="about__desc">&emsp;${paragraph}</p>`
     })
     return (
         `<section class="about section">
