@@ -1,0 +1,26 @@
+.footer {
+    @extend %flex-horizon;
+    justify-content: space-between;
+    background-color: $clr-primary-dk;
+    padding: 15px 30px;
+    color: $clr-primary-ltr;
+    font-weight: $fw-sml;
+}
+
+.git-card {
+    @extend %flex-horizon;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+
+    @media (hover: hover) and (pointer: fine) {
+        &:hover {
+            filter: brightness(120%);
+        }
+    }
+}
+
+.git-card__text {
+    color: $clr-primary-ltr;
+    font-weight: $fw-sml;
+}
