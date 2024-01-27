@@ -1,0 +1,29 @@
+.aside {
+    flex-basis: 40%;
+    padding-top: 25px;
+}
+
+.contacts__list {
+    @extend %flex-vertical;
+    gap: 7px;
+}
+
+.contacts__ico {
+    box-sizing: content-box;
+    width: 16px;
+    height: 16px;
+    padding: 0 10px;
+}
+
+.contacts__link {
+    color: $clr-primary;
+    text-decoration: none;
+
+    @media (hover: hover) and (pointer: fine) {
+        &:hover {
+            cursor: pointer;
+            color: $clr-primary-dkr;
+            font-weight: $fw-sml;
+        }
+    }
+}
