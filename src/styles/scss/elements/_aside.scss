@@ -4,8 +4,7 @@
 }
 
 .contacts__list {
-    @extend %flex-vertical;
-    gap: 7px;
+    @extend %flex-list;
 }
 
 .contacts__ico {
@@ -26,4 +25,34 @@
             font-weight: $fw-sml;
         }
     }
+}
+
+.entity__place {
+    color: $clr-lt;
+    font-weight: $fw-sml;
+    margin-bottom: 10px;
+}
+
+.entity__degrees {
+    @extend %flex-list;
+    padding-left: 10px;
+}
+
+.entity__degree {
+
+    &-years {
+        color: $clr-lt;
+    }
+}
+
+.skills__list {
+    @extend %flex-list;
+}
+
+.languages__list {
+    @extend %flex-list;
+}
+
+.languages__language-name {
+    text-transform: capitalize;
 }
