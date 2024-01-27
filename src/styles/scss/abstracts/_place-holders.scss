@@ -11,3 +11,9 @@
 %side-padding {
     padding: 0 40px;
 }
+
+%flex-list {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
