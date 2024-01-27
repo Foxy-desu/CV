@@ -5,6 +5,11 @@ $clr-primary-lt: #666666;
 $clr-primary-ltr: #a9a9a9;
 $clr-primary-dk: #4b4a4a;
 $clr-primary-dkr: #181818;
+$clr-lt: #8c8a8a;
+$clr-dk: #9b9b9b;
+
+//font-family
+$ff-base: 'Raleway', sans-serif;
 
 //font size
 $fs-base: 18px;
@@ -16,9 +21,13 @@ $fs-sml: 16px;
 $fw-base: 200;
 $fw-big: 900;
 $fw-mid: 600;
-$fw-sml: 100;
+$fw-sml: 400;
+$fw-smlr: 100;
 
 //border width
 $bw-thic: 3px;
 $bw-mid: 2px;
 $bw-thin: 1px;
+
+//box shadow
+$bsh-base:  10px 10px 40px -1px rgba(0, 0, 0, 0.23);
