@@ -3,7 +3,6 @@ function sectionTitleHandler() {
     const viewportWidth = window.innerWidth;
     if (viewportWidth <= 740) {
         sections.setAttribute('title', 'Sorry, the block is temporarily unavailable for viewport width under 741px');
-        console.log(sections)
     } else {
         sections.removeAttribute('title', 'Sorry, the block is temporarily unavailable for viewport width under 741px');
     }
