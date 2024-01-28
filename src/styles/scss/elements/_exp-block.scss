@@ -1,3 +1,11 @@
+.experience__heading {
+    @media screen and (max-width: 740px) {
+        &{
+            width: 100%; 
+        }
+    }
+}
+
 .experience__list {
     @extend %flex-list;
     flex-wrap: wrap;
@@ -44,5 +52,9 @@
         &:hover {
             font-size: $fs-enlarged;
         }
+    }
+
+    @media screen and (max-width: 670px) {
+        @include adaptive-font-size($maxLayoutWidth: 670, $pcFontSize: 21, $mobileFontSize: 16, $minLayoutWidth: 360)
     }
 }

@@ -9,4 +9,8 @@
     color: $clr-primary;
     background-color: $clr-base;
     box-shadow: $bsh-base;
+
+    @media screen and (max-width: 550px) {
+        padding-top: 20px;
+    }
 }

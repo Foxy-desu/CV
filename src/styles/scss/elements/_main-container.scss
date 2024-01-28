@@ -1,6 +1,12 @@
 .info-wrap {
     @extend %flex-horizon;
     padding-bottom: 40px;
+
+    @media screen and (max-width: 740px) {
+        &{
+           flex-direction: column; 
+        }
+    }
 }
 
 .content-heading {
@@ -26,8 +32,26 @@
         height: 3px;
         background-color: $clr-primary;
     }
+
+    @media screen and (max-width: 740px) {
+        &{
+            width: fit-content; 
+        }
+
+        &:not(.experience__heading)::after {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 670px) {
+        @include adaptive-font-size($maxLayoutWidth: 670, $pcFontSize: 28, $mobileFontSize: 18, $minLayoutWidth: 360)
+    }
 }
 
 .section {
     margin-bottom: 20px;
+
+    @media screen and (max-width: 550px) {
+        margin-bottom: 0;
+    }
 }
