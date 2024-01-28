@@ -12,6 +12,7 @@ import { renderLangSection } from "./js-modules/lang-section";
 import { renderAboutSection } from "./js-modules/about-section";
 import { renderExp } from "./js-modules/exp-section";
 import { renderFooter } from "./js-modules/footer";
+import { sectionTitleHandler } from "./js-modules/section-onhover";
 
 const experience = renderExp(cvData);
 const about = renderAboutSection(cvData);
@@ -27,3 +28,4 @@ const mainWrap =  renderWrap(aside, main);
 const header = renderHeader(cvData);
 const page = renderPage(header, mainWrap, footer);
 document.body.insertAdjacentHTML("afterbegin", page);
+window.addEventListener('resize', sectionTitleHandler);
