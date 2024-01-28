@@ -40,16 +40,40 @@ li {
   background-color: #f7f7f7;
   box-shadow: 10px 10px 40px -1px rgba(0, 0, 0, 0.23);
 }
+@media screen and (max-width: 550px) {
+  .page {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .wrap {
+    padding: 0 20px;
+  }
+}
 
 .hero {
   justify-content: space-between;
+  align-items: end;
   padding: 0 20px 20px;
   border-bottom: 3px solid #a9a9a9;
+  transition: 0.4s ease;
+}
+@media screen and (max-width: 550px) {
+  .hero {
+    justify-content: center;
+  }
 }
 
 .hero__desc-block {
   margin-right: 20px;
   padding-top: 20px;
+  transition: 0.4s ease;
+}
+@media screen and (max-width: 550px) {
+  .hero__desc-block {
+    text-align: center;
+  }
 }
 
 .person-name {
@@ -66,14 +90,31 @@ li {
 .person-name__name {
   font-weight: 900;
 }
+@media screen and (max-width: 670px) and (max-width: 763px) {
+  .person-name {
+    font-size: calc(40px + 34 * (100vw - 360px) / 670);
+  }
+}
 
 .person-position {
   font-size: 28px;
   font-weight: 200;
 }
+@media screen and (max-width: 670px) and (max-width: 763px) {
+  .person-position {
+    font-size: calc(22px + 10.2 * (100vw - 360px) / 670);
+  }
+}
 
 .hero__image-block {
   justify-content: end;
+  transition: 0.4s ease-in-out;
+}
+@media screen and (max-width: 550px) {
+  .hero__image-block {
+    transform: scale(0);
+    display: none;
+  }
 }
 
 .person-photo {
@@ -93,6 +134,11 @@ li {
 
 .info-wrap {
   padding-bottom: 40px;
+}
+@media screen and (max-width: 740px) {
+  .info-wrap {
+    flex-direction: column;
+  }
 }
 
 .content-heading {
@@ -118,14 +164,62 @@ li {
   height: 3px;
   background-color: #565656;
 }
+@media screen and (max-width: 740px) {
+  .content-heading {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .content-heading:not(.experience__heading)::after {
+    display: none;
+  }
+}
+@media screen and (max-width: 670px) and (max-width: 763px) {
+  .content-heading {
+    font-size: calc(18px + 17 * (100vw - 360px) / 670);
+  }
+}
 
 .section {
   margin-bottom: 20px;
+}
+@media screen and (max-width: 550px) {
+  .section {
+    margin-bottom: 0;
+  }
 }
 
 .aside {
   flex-basis: 40%;
   padding-top: 25px;
+}
+@media screen and (max-width: 740px) {
+  .aside {
+    padding-top: 7px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .aside__sections {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 550px) {
+  .aside__sections {
+    flex-wrap: wrap;
+    row-gap: 0;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .contacts__list {
+    display: none;
+  }
 }
 
 .contacts__ico {
@@ -147,6 +241,12 @@ li {
   }
 }
 
+@media screen and (max-width: 740px) {
+  .education__list {
+    display: none;
+  }
+}
+
 .entity__place {
   color: #8c8a8a;
   font-weight: 400;
@@ -161,6 +261,18 @@ li {
   color: #8c8a8a;
 }
 
+@media screen and (max-width: 740px) {
+  .skills__list {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .languages__list {
+    display: none;
+  }
+}
+
 .languages__language-name {
   text-transform: capitalize;
 }
@@ -170,17 +282,44 @@ li {
   border-left: 2px solid #9b9b9b;
   padding: 30px 0 0 30px;
 }
+@media screen and (max-width: 740px) {
+  .main {
+    border: none;
+    padding: 30px 0 0 0;
+  }
+}
+@media screen and (max-width: 570px) {
+  .main {
+    padding: 0 0 0 0;
+  }
+}
 
 .about__heading {
   margin-bottom: 10px;
   font-weight: 700;
   color: #656565;
 }
+@media screen and (max-width: 670px) and (max-width: 763px) {
+  .about__heading {
+    font-size: calc(20px + 11.9 * (100vw - 360px) / 670);
+  }
+}
 
 .about__desc {
   margin-bottom: 20px;
   line-height: 135%;
   text-align: justify;
+}
+@media screen and (max-width: 670px) and (max-width: 763px) {
+  .about__desc {
+    font-size: calc(16px + 3.4 * (100vw - 360px) / 670);
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .experience__heading {
+    width: 100%;
+  }
 }
 
 .experience__list {
@@ -219,6 +358,11 @@ li {
 @media (hover: hover) and (pointer: fine) {
   .exp-entry__link:hover {
     font-size: 21px;
+  }
+}
+@media screen and (max-width: 670px) and (max-width: 763px) {
+  .exp-entry__link {
+    font-size: calc(16px + 8.5 * (100vw - 360px) / 670);
   }
 }
 
