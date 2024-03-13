@@ -49,7 +49,7 @@ const cvData = {
         aboutMe: [
           "I've been passionate about frontend development for a while, and have already obtained some skills in it. If you kindly check my GitHub, you may find pet-projects I've made using different technologies. Each time I start a project, I aim not only at consolidation of my knowledge, but also at broadening my professional outlook.",
           "I have some landing pages, multi-page sites, SPA created. The tasks I generally encounter are: layout analysis; blocks, elements and modifiers implementation; DOM and events manipulation, working with objects, arrays and primitive data types using Java Script; adding adaptive and responsive styling. I attempt to use module approach for easy maintenance, opt for code linting and formatting using ESLint, prettier, style lint.",
-          "Currently I learn React, so my latest project is based on it. It also includes libraries for routing, DOM elements manipulation, parsing and purifying HTML code injected in components; it is the first project I start using a UI library 'Swiper' and local storage in"
+          "I'm currently learning React, so my latest project is based on it. It also includes libraries for routing, DOM elements manipulation, parsing and purifying HTML code injected in components; it is the first project I start using a UI library 'Swiper' and local storage in"
         ],
         experience: [
             {name: 'Coffee House', desc: '', thumb: cofee, src: 'https://foxy-desu.github.io/CoffeeHouse/coffee-house/'},
