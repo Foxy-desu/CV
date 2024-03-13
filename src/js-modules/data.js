@@ -2,7 +2,8 @@ import photo from '../assets/img/photo.jpeg';
 import cofee from '../assets/icons/cofee-house.svg';
 import hangman from '../assets/icons/hangman.png';
 import japan from '../assets/icons/japan.png';
-import library from '../assets/icons/lib.png'
+import library from '../assets/icons/lib.png';
+import plndsg from '../assets/icons/PLNDSG.png';
 
 const cvData = {
     name: 'Alexandra',
@@ -28,11 +29,14 @@ const cvData = {
             'HTML5',
             'CSS3',
             'SASS (SCSS)',
-            'JS',
+            'JS (ES6)',
+            'React',
+            'Git',
+            'GitLab CI/CD',
             'NPM',
             'Webpack',
+            'Docker',
             'Figma',
-            'Git',
             'Bash'
         ],
         languages: {
@@ -43,15 +47,17 @@ const cvData = {
     },
     mainBlock: {
         aboutMe: [
-            "Having graduated the university I started my carreer as a teacher of foreign languages at a local foreign language school in Blagoveshchensk. Being a teacher was fun, it also helped a lot in ganing different skills. After 4 years of teaching I found out that this was not my kind of thing.",
-            "Some circumstances made me leave my hometown for another city where I started working as a client support agent for an IT company. This position gave me much experience in communication, problem solving; let me take a closer look at technical side of our service, and business processes in our company. Working with high skilled developers I realized that frontend developing is an interesting IT field. I've started learning and have already obtaines some hard skills.",
-            "I believe my strong will, background and passion for frontend will surely lead me to this brand-new profession."
+          "I've been passionate about frontend development for a while, and have already obtained some skills in it. If you kindly check my GitHub, you may find pet-projects I've made using different technologies. Each time I start a project, I aim not only at consolidation of my knowledge, but also at broadening my professional outlook.",
+          "I have some landing pages, multi-page sites, SPA created. The tasks I generally encounter are: layout analysis; blocks, elements and modifiers implementation; DOM and events manipulation, working with objects, arrays and primitive data types using Java Script; adding adaptive and responsive styling. I attempt to use module approach for easy maintenance, opt for code linting and formatting using ESLint, prettier, style lint.",
+          "Currently I learn React, so my latest project is based on it. It also includes libraries for routing, DOM elements manipulation, parsing and purifying HTML code injected in components; it is the first project I start using a UI library 'Swiper' and local storage in"
         ],
         experience: [
             {name: 'Coffee House', desc: '', thumb: cofee, src: 'https://foxy-desu.github.io/CoffeeHouse/coffee-house/'},
             {name: 'Hangman', desc: '', thumb: hangman, src: 'https://foxy-desu.github.io/HangMan/hangman/src/'},
             {name: 'Library landing', desc: '', thumb: library, src: 'https://foxy-desu.github.io/Library-landing-project/'},
-            {name: 'Japan landing', desc: '', thumb: japan, src: 'https://foxy-desu.github.io/Japan_travel_landing/'}
+            {name: 'Japan landing', desc: '', thumb: japan, src: 'https://foxy-desu.github.io/Japan_travel_landing/'},
+            {name: 'Polina Design', desc: '', thumb: plndsg, src: 'https://foxy-desu.github.io/polina-design/'},
+
         ]
     },
     gitHub: 'https://github.com/Foxy-desu'
