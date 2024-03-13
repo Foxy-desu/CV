@@ -11,11 +11,6 @@ function renderHeader(info) {
                         ${info.position}
                     </p>
                 </div>
-                <div class="hero__image-block">
-                    <div class="person-photo">
-                        <img class="person-photo__img" width="150" height="150" src="${info.photo}">
-                    </div>
-                </div>
             </header>
         </div>`
     )
