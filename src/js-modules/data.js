@@ -14,7 +14,7 @@ const cvData = {
         contacts: {
             phone: '+79893544196',
             mail: 'iammeduza@gmail.com',
-            telegram: 'pincalsthedeer'
+            telegram: 'Pincalsthedeer'
         },
         education: [
             {
